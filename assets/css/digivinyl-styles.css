@@ -1,0 +1,21 @@
+.dg_hidden {
+    display: none;
+}
+
+.dg_left {
+    float: left;
+    width: 50%;
+}
+
+.dg_right {
+    float: right;
+    width: 50%;
+}
+
+.dg_clear {
+    clear: both;
+}
+
+.dg_paragraph {
+    color: red;
+}
