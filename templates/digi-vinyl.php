@@ -8,28 +8,31 @@ function jquery_custom_action() {
     if( 11 === $id ) {
     ?>
         <div>
-        <form action="">
-            <p>Please insert your Quanity Desired, Length and Width:</p>
-            <p><strong>(Minimum Order Amount Is $20)</strong></p>
-            <label for="quantity">Quantity: </label>
-            <input id="quantity" class="custom-input" name="quantity" type="text"/><br>
-            <label for="length">Length: </label>
-            <input id="length" class="custom-input" name="length" type="text"/><br>
-            <label for="width">Width: </label>
-            <input id="width" type="number" class="custom-input" min="0.01" max="17" name="width"/><br>
+            <form action="">
+                <p>Please input you desired quantity and the length and width of your design.</p>
+                <p><strong>(Minimum order amount is $25. Price per sq in. varies based on quantity.)</strong></p>
+                <label for="quantity">Quantity: </label>
+                <input id="quantity" class="custom-input" name="quantity" type="text"/><br>
+                <label for="length">Length: </label>
+                <input id="length" class="custom-input" name="length" type="text"/><br>
+                <label for="width">Width: </label>
+                <input id="width" type="number" class="custom-input" name="width"/><br>
+                <label for="pics">Number Of Pics: </label>
+                <input id="pics" type="text" class="custom-input" name="pics"><br>
             </form>
         </div>
         <div class="dg_left">
             <label for="area">Area: </label>
-            <p><span id="area">0.00</span> Square Feet Per Piece</p>
-            <p><span id="totalarea">0.00</span> Total Square Inches</p>
-            <label for="cost">Total Cost: </label>
+            <p><span id="area">0.00</span> sq in. per pirce</p>
+            <p><span id="totalarea">0.00</span> total sq in.</p>
+            <label for="cost">Total cost: </label>
             <p>$<span id="cost">0.00</span></p>
-            <p id="minimum-purchase"></p>
+            <p>Cost Per Transfer: </p>
+            <p>$<span id="costpertransfer">0.00</span> Per Transfer</p>
         </div>
         <div id="hidden_paragraph" class="dg_right dg_hidden">
-            <p class="dg_paragraph"><strong>The minimum order amount for this product is $25.00. Please choose a different quantity/length/width 
-                combination or, if you prefer, we will just add $25.00 to your cart when you add this item to your cart.</strong>
+            <p class="dg_paragraph"><strong>The minimum order amount for this product is $25. Please increase the item quantity or,
+             if you prefer to maintain your current quantity, the item price in the cart will increase to $25.</strong>
             </p>
         </div>
         <div class="dg_clear"></div>
