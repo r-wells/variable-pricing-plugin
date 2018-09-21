@@ -26,8 +26,10 @@
           if (l > 125) {
             l = 125;
             $('#length').val(l);
+            $('#max_length').removeClass('dg_hidden');
           }
           if(w > 17) {
+            $('#max_width').removeClass("dg_hidden");
             w = 17;
             $('#width').val(w);
           }
@@ -56,7 +58,7 @@
         $('#cost').html((0).toFixed(2));
         $('.price').html("$" + (0).toFixed(2) + "/sq in");
         $('#hidden_field').val(0);
-        $('#costpertransfer').html((0).toFixed(2))
+        $('#costpertransfer').html((0).toFixed(2));
       }
     }
     

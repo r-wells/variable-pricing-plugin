@@ -4,31 +4,32 @@ function jquery_custom_action() {
 
     $id = get_the_ID();
 
-    //if( 19222 === $id ) 
-    if( 11 === $id ) {
+    if( 19222 === $id ) {
     ?>
         <div>
             <form action="">
-                <p>Please input you desired quantity and the length and width of your design.</p>
+                <p>Please input your desired quantity and the length and width of your design.</p>
                 <p><strong>(Minimum order amount is $25. Price per sq in. varies based on quantity.)</strong></p>
                 <label for="quantity">Quantity: </label>
                 <input id="quantity" class="custom-input" name="quantity" type="text"/><br>
                 <label for="length">Length: </label>
                 <input id="length" class="custom-input" name="length" type="text"/><br>
+                <p id="max_length" class="dg_hidden">Maximum length is 125"</p>
                 <label for="width">Width: </label>
                 <input id="width" type="number" class="custom-input" name="width"/><br>
-                <label for="pics">Number Of Pics: </label>
+                <p id="max_width" class="dg_hidden">Maximum width is 17"</p>
+                <label for="pics">Number of pics: </label>
                 <input id="pics" type="text" class="custom-input" name="pics"><br>
             </form>
         </div>
         <div class="dg_left">
             <label for="area">Area: </label>
-            <p><span id="area">0.00</span> sq in. per pirce</p>
+            <p><span id="area">0.00</span> sq in. per piece</p>
             <p><span id="totalarea">0.00</span> total sq in.</p>
             <label for="cost">Total cost: </label>
             <p>$<span id="cost">0.00</span></p>
-            <p>Cost Per Transfer: </p>
-            <p>$<span id="costpertransfer">0.00</span> Per Transfer</p>
+            <p>Cost per transfer: </p>
+            <p>$<span id="costpertransfer">0.00</span> per transfer</p>
         </div>
         <div id="hidden_paragraph" class="dg_right dg_hidden">
             <p class="dg_paragraph"><strong>The minimum order amount for this product is $25. Please increase the item quantity or,
