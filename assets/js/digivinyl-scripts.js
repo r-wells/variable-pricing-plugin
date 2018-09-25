@@ -72,7 +72,7 @@
       var c = 0.13 * Math.pow(a, -0.134);
       var cps = c.toFixed(2);
       var each = (c * length * width);
-      var tc = (each * quantity) + (p * 0.15);
+      var tc = (each * quantity) + (quantity * pics * 0.15);
       var price = "$" + cps + "/sq in";
       $('#area').html((length * width).toFixed(2));
       $('#totalarea').html((length * width * quantity).toFixed(2));
